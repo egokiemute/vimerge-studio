@@ -29,7 +29,7 @@ const Hero = () => {
             section of the page.
           </p>
           <button className="px-12 py-4 text-lg rounded-full bg-gradient-to-b from-blue-500 to-blue-600 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
-            Let's Build
+            Let&apos;s Build
           </button>
         </div>
       </div>
