@@ -12,10 +12,10 @@ const Footer = () => {
             </div>
         </div>
         <div className='flex items-center gap-6'>
-            <Link href="/">Instagram</Link>
-            <Link href="/">LinkedIn</Link>
-            <Link href="/">X</Link>
-            <Link href="/">Facebook</Link>
+            <Link href="https://www.instagram.com/vimerge.studio/">Instagram</Link>
+            {/* <Link href="/">LinkedIn</Link>
+            <Link href="/">X</Link> */}
+            <Link href="https://web.facebook.com/profile.php?id=61559930160694&sk=about">Facebook</Link>
         </div>
     </footer>
   )
