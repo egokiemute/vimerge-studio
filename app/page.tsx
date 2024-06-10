@@ -1,3 +1,4 @@
+import { BentoGridSecondDemo } from "@/components/BentoGridDemo";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
@@ -27,10 +28,11 @@ export default function Home() {
       ),
     },
   ];
+
   return (
-    <main className="relative flex justify-center items-center flex-col overflow-hidden mx-auto">
+    <>
       <div className="container max-w-8xl w-full">
-        <Header />
+        {/* <Header /> */}
         <FloatingNav navItems={navItems} />
         <Hero />
       </div>
@@ -38,8 +40,10 @@ export default function Home() {
         <ProjectCarousel />
       </div>
       <PreviousWorks />
+      <BentoGridSecondDemo />
       <Testimonial />
-      <Footer />
-    </main>
+      {/* <Footer /> */}
+    </>
   );
 }
+

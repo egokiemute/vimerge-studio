@@ -122,7 +122,7 @@ export const ImagesSlider = ({
     >
       {areImagesLoaded && overlay && (
         <div
-          className={cn("absolute inset-0 bg-black/50 z-40", overlayClassName)}
+          className={cn("absolute inset-0 z-40", overlayClassName)}
         />
       )}
 
@@ -156,7 +156,7 @@ export const ImagesSlider = ({
             animate="visible"
             exit="exit"
             variants={slideVariants}
-            className="content absolute inset-0 flex items-center justify-center z-50"
+            className="content absolute bottom-10 flex items-start left-8 z-50" 
           >
             {contents[currentIndex]}
           </motion.div>

@@ -4,9 +4,9 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="container flex justify-between items-center py-6 bg-transparent w-full">
+    <div className="flex justify-between items-center py-6 bg-transparent w-full">
       <Image
-        src="/assets/main-logo.png"
+        src="/assets/logo.png"
         alt="Vimerge Studio"
         width={200}
         height={30}
