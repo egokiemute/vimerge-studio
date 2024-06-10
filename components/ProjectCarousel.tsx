@@ -9,7 +9,7 @@ const ProjectCarousel = () => {
       imgSrc:
         "https://images.unsplash.com/photo-1485433592409-9018e83a1f0d?q=80&w=1814&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       videoSrc:
-        "https://pentagram-production-uploads.s3.amazonaws.com/5232753e-8d68-40f7-b872-290fa58d5fd3/0Curtis_Preview_Homepage.mp4#t=0.1", // Video URL for the first slide (if any)
+        "/curtis-video.mp4", // Video URL for the first slide (if any)
       heading: "The hero section slideshow nobody asked for",
       buttonText: "Join Now",
       index: 1
@@ -18,7 +18,7 @@ const ProjectCarousel = () => {
       imgSrc:
         "https://images.unsplash.com/photo-1483982258113-b72862e6cff6?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       videoSrc:
-        "https://pentagram-production-uploads.s3.amazonaws.com/6379d6a8-0a00-4986-b556-cb170ad32096/MW_NHM_Penta_Ripple.mp4#t=0.1", // Video URL for the second slide (if any)
+        "/reddit-video.mp4", // Video URL for the second slide (if any)
       heading: "Second slide content",
       buttonText: "Join Now",
       index: 2
@@ -27,7 +27,7 @@ const ProjectCarousel = () => {
       imgSrc:
         "https://images.unsplash.com/photo-1482189349482-3defd547e0e9?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       videoSrc:
-        "https://pentagram-production-uploads.s3.amazonaws.com/fb4ed404-200e-4690-989a-333d01d3266e/01_Reddit_HomePage_LogoLockup_FullCard.mp4#t=0.1", // Video URL for the third slide (if any)
+        "/instream-video.mp4", // Video URL for the third slide (if any)
       heading: "Third slide content",
       buttonText: "Join Now",
       index: 3

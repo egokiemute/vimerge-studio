@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Vimerge Studio - A design studio for creative christian organizations.",
   description: "A design studio for creative christian organizations.",
+  icons: {
+    icon: "/favicon.png"
+  }
 };
 
 export default function RootLayout({
