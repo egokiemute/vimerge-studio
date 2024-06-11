@@ -1,9 +1,12 @@
+import ContactForm from "@/components/ContactForm";
+import ContactHero from "@/components/ContactHero";
 import React from "react";
 
 const page = () => {
   return (
-    <main className="relative flex justify-center items-center flex-col overflow-hidden mx-auto">
-      <div>Contact</div>
+    <main className="container">
+      <ContactHero />
+      <ContactForm />
     </main>
   );
 };

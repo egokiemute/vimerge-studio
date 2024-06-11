@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 const Works = () => {
@@ -120,9 +121,11 @@ const Works = () => {
             </div>
           ))}
         </div>
-        <button className="mt-12 px-8 md:px-12 py-2 md:py-4 text-base md:text-lg rounded-full bg-gradient-to-b from-blue-500 to-blue-600 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
-          Let&apos;s Build Together
-        </button>
+        <Link href="/contact">
+          <button className="px-8 md:px-12 py-2 text-base md:text-lg rounded-full bg-gradient-to-b from-blue-500 to-blue-600 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
+            Let&apos;s Build
+          </button>
+        </Link>
       </div>
     </section>
   );
