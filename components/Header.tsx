@@ -4,20 +4,27 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center py-6 bg-transparent w-full">
+    <div className="flex justify-between items-center py-10 bg-transparent w-full">
       <Image
         src="/assets/logo.png"
         alt="Vimerge Studio"
-        width={200}
-        height={30}
+        width={140}
+        height={20}
+        className="w-32 h-auto md:w-40 md:h-10"
       />
       <div className="flex flex-row items-center gap-4 relative">
-        <Link href="/works" className="nav-link-hover relative hidden md:inline-block">
+        <Link
+          href="/works"
+          className="nav-link-hover relative hidden md:inline-block text-base md:text-lg"
+        >
           WORKS
         </Link>
-        <Link href="/works" className="nav-link-hover relative">
+        <Link href="/works" className="nav-link-hover relative text-base md:text-lg">
           CONTACT
         </Link>
+        <button className="px-8 md:px-12 py-2 text-base md:text-lg rounded-full bg-gradient-to-b from-blue-500 to-blue-600 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
+          Let&apos;s Build
+        </button>
       </div>
     </div>
   );

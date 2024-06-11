@@ -20,7 +20,7 @@
 
 @layer components {
   .container {
-    @apply sm:px-5 px-5;
+    @apply md:px-16 px-5;
   }
 }
 

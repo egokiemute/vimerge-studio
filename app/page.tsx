@@ -40,7 +40,7 @@ export default function Home() {
         <ProjectCarousel />
       </div>
       <PreviousWorks />
-      <BentoGridSecondDemo />
+      {/* <BentoGridSecondDemo /> */}
       <Testimonial />
       {/* <Footer /> */}
     </>
