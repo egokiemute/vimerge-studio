@@ -31,18 +31,15 @@ export default function Home() {
 
   return (
     <>
-      <div className="container max-w-8xl w-full">
-        {/* <Header /> */}
-        <FloatingNav navItems={navItems} />
         <Hero />
+      <div className="container max-w-8xl w-full">
+        <FloatingNav navItems={navItems} />
       </div>
       <div className=" w-full">
         <ProjectCarousel />
       </div>
       <PreviousWorks />
-      {/* <BentoGridSecondDemo /> */}
       <Testimonial />
-      {/* <Footer /> */}
     </>
   );
 }

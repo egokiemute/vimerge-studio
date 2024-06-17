@@ -25,11 +25,11 @@ const Header = () => {
         >
           CONTACT
         </Link>
-        <Link href="/contact">
+        {/* <Link href="/contact">
           <button className="px-8 md:px-12 py-2 text-base md:text-lg rounded-full bg-gradient-to-b from-blue-500 to-blue-600 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
             Let&apos;s Build
           </button>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

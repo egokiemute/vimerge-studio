@@ -12,13 +12,13 @@ const Footer = () => {
       </div>
       <div className="flex items-center gap-6">
         <Link
-          className="nav-link-hover"
+          className="nav-link-hover relative"
           href="https://www.instagram.com/vimerge.studio/"
         >
           Instagram
         </Link>
         <Link
-          className="nav-link-hover"
+          className="nav-link-hover relative"
           href="https://web.facebook.com/profile.php?id=61559930160694&sk=about"
         >
           Facebook

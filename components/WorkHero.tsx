@@ -7,7 +7,7 @@ const WorkHero = () => {
         <h1 className="text-4xl md:text-7xl font-bold text-start">
           The work we do,
           <br />
-          and the people we help.
+          our mission in action.
         </h1>
       </div>
     </section>
