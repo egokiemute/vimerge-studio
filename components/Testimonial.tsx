@@ -7,14 +7,14 @@ const Testimonial = () => {
   const testimonials = [
     {
       quote:
-        "Working with Henry was a breeze. He's professional, responsive and takes great pride in the product he delivers. His passion for all aspects of development shine through. If you're looking to level up.",
+        "Working with Henry was a breeze. He's professional, responsive and takes great pride in the product he delivers.",
       name: "Dr Ramsey Nijem 1",
       position: "Director Kansas",
       imageSrc: "/assets/testimony.png",
     },
     {
       quote:
-        "If you're looking to level up your website and take your brand to the next level, look no further. I recommend him without hesitation.",
+        "If you're looking to level up your website and take your brand to the next level, look no further.",
       name: "Dr Nijem 2",
       position: "University of Kansas",
       imageSrc: "/assets/testimony.png",
@@ -44,14 +44,14 @@ const Testimonial = () => {
   return (
     <section className="py-10 mb-20 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-3 text-foreground">
+        <h2 className="text-3xl font-bold text-center mb-3 text-foreground">
           Praise
         </h2>
-        <p className="text-center text-muted-foreground mb-12">
+        <p className="text-center text-muted-foreground mb-8">
           Some nice words from nice people.
         </p>
-        <div className="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-lg relative">
-          <p className="text-lg text-gray-800 mb-4">
+        <div className="max-w-3xl mx-auto bg-white p-4 rounded-lg shadow-lg relative">
+          <p className="text-base md:text-lg text-gray-800 mb-4">
             {testimonials[currentSlide].quote}
           </p>
           <div className="flex justify-between items-center">
@@ -74,12 +74,12 @@ const Testimonial = () => {
                 </p>
               </div>
             </div>
-            <div className="transform bg-transparent border-none focus:outline-none flex items-center gap-6">
+            <div className="transform bg-transparent border-none focus:outline-none flex items-center gap-4">
               <button className="rounded-full bg-gray-100 p-2 " onClick={handlePreviousSlide}>
-                <IconArrowLeft className="h-6 w-6 text-gray-400" />
+                <IconArrowLeft className="h-5 w-5 text-gray-400" />
               </button>
               <button className="rounded-full bg-gray-100 p-2 " onClick={handleNextSlide}>
-                <IconArrowRight className="h-6 w-6 text-gray-400" />
+                <IconArrowRight className="h-5 w-5 text-gray-400" />
               </button>
             </div>
           </div>
