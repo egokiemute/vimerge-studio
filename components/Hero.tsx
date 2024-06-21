@@ -5,7 +5,7 @@ import Link from "next/link";
 const Hero = () => {
   const words = ["design", "studio", "beautiful", "modern"];
   return (
-    <section className="container pb-20 pt-10 sm:pt-20 md:pt-28">
+    <section className="container pb-16 pt-10 sm:pt-20 md:pt-28">
       <div className="max-w-8xl mx-auto relative z-10 w-full pt-20 md:pt-0 flex flex-col gap-5 items-start justify-start">
         <div className="text-5xl sm:text-6xl md:text-8xl font-bold text-start w-full">
           Design studio{" "}
