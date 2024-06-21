@@ -46,7 +46,7 @@ const Page = async () => {
                     <h3 className="text-2xl font-bold mb-2 text-foreground">
                       {work.title}
                     </h3>
-                    <p className="text-muted-foreground mb-4">{work.author}</p>
+                    <p className="text-muted-foreground mb-4">{work.description}</p>
                     <div className="flex flex-wrap gap-2">
                       {(work.categories || []).map((category, tagIndex) => (
                         <span
