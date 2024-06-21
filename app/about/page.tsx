@@ -65,9 +65,9 @@ const page = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg shadow-lg">
               <img
-                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80"
                 alt="Founder"
-                className="w-full h-auto object-cover mb-4 rounded"
+                className="w-full h-96 object-cover mb-4 rounded"
               />
               <div className=" p-6">
                 <h3 className="text-2xl font-bold mb-2 text-foreground">
@@ -84,13 +84,30 @@ const page = () => {
               <img
                 src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
                 alt="Founder"
-                className="w-full h-auto object-cover mb-4 rounded"
+                className="w-full h-96 object-cover mb-4 rounded"
               />
               <div className=" p-6">
                 <h3 className="text-2xl font-bold mb-2 text-foreground">
                   Matthew Okiemute
                 </h3>
                 <p className="mb-4">Developer Lead</p>
+                <p className="text-muted-foreground mb-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                  non recusandae deserunt laudantium possimus soluta nobis!
+                </p>
+              </div>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg">
+              <img
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80"
+                alt="Founder"
+                className="w-full h-96 object-cover mb-4 rounded"
+              />
+              <div className=" p-6">
+                <h3 className="text-2xl font-bold mb-2 text-foreground">
+                  Emilson Kurtosie
+                </h3>
+                <p className="mb-4">CEO / Design Lead</p>
                 <p className="text-muted-foreground mb-4">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
                   non recusandae deserunt laudantium possimus soluta nobis!
