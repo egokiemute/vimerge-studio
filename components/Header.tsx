@@ -17,21 +17,18 @@ const Header = () => {
       <div className="flex flex-row items-center gap-4 relative">
         <Link
           href="/works"
-          className="nav-link-hover relative hidden md:inline-block text-xs sm:text-base md:text-lg"
+          className="nav-link-hover relative text-[14px] sm:text-base md:text-lg"
         >
           WORKS
         </Link>
+        <div className="hidden sm:inline-block">
         <Link
           href="/contact"
-          className="nav-link-hover relative text-xs sm:text-base md:text-lg"
+          className="hidden md:inline-block nav-link-hover relative text-[14px] sm:text-base md:text-lg"
         >
           CONTACT
         </Link>
-        {/* <Link href="/contact">
-          <button className="px-8 md:px-12 py-2 text-base md:text-lg rounded-full bg-gradient-to-b from-blue-500 to-blue-600 text-white focus:ring-2 focus:ring-blue-400 hover:shadow-xl transition duration-200">
-            Let&apos;s Build
-          </button>
-        </Link> */}
+        </div>
       </div>
     </div>
   );

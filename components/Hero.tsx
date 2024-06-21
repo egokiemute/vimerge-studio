@@ -7,9 +7,9 @@ const Hero = () => {
   return (
     <section className="container pb-20 pt-16 sm:pt-20 md:pt-28">
       <div className="max-w-8xl mx-auto relative z-10 w-full pt-20 md:pt-0 flex flex-col gap-5 items-start justify-start">
-        <div className="text-2xl sm:text-4xl md:text-8xl font-bold text-start">
-          Design studio
-          <br />
+        <div className="text-5xl sm:text-6xl md:text-8xl font-bold text-start w-full">
+          Design studio{" "}
+          <br className="hidden sm:inline-block" />
           for Creative Christians.
         </div>
         <p className="font-normal text-base md:text-xl text-neutral-500 max-w-4xl text-start">
