@@ -14,8 +14,8 @@ const Hero = () => {
         </div>
         <p className="font-normal text-base md:text-xl text-neutral-500 max-w-4xl text-start">
           We are more than a design studio; we are storytellers of your visions.
-          Inspired by Habbakuk 2:2, &apos;Write the vision and make it
-          plain.&apos; Our designs transform your thoughts into impactful visual
+          Inspired by Habbakuk 2:2, <b>&apos;Write the vision and make it
+          plain.&apos;</b> Our designs transform your thoughts into impactful visual
           narratives.
         </p>
       </div>

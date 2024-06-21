@@ -42,7 +42,7 @@ const Testimonial = () => {
   };
 
   return (
-    <section className="py-10 mt-16 mb-20 bg-background">
+    <section className="py-10 mb-20 bg-background">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-3 text-foreground">
           Praise

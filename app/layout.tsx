@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     "Vimerge Studio - A design studio for creative christian organizations.",
   description: "A design studio for creative christian organizations.",
   icons: {
-    icon: "/favicon.png",
+    icon: "/favicon.ico",
   },
 };
 

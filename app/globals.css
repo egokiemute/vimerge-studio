@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.nav-link-hover {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-link-hover::before,
 .nav-link-hover::after {
   content: "";
   position: absolute;
@@ -9,14 +17,22 @@
   left: 0;
   width: 0;
   height: 2px;
-  cursor: pointer;
   background-color: #005fea;
   transition: width 0.3s ease-in-out;
 }
 
-.nav-link-hover:hover::after {
-  width: 100%;
+.nav-link-hover::before {
+  width: 30%; /* Show by default */
 }
+
+.nav-link-hover::after {
+  width: 0; /* Hidden by default */
+}
+
+.nav-link-hover:hover::after {
+  width: 100%; /* Show on hover */
+}
+
 
 @layer components {
   .container {
