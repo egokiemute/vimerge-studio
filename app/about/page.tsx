@@ -92,13 +92,13 @@ const page = () => {
             </div>
             <div itemProp="jobtitle">Seller</div>
             <div itemProp="description">
-              Hi! My name is Milsson. I assure you, I'm your best choice for
+              Hi! My name is Milsson. I assure you, I&apos;m your best choice for
               remarkable graphics. I have completed several courses on graphic
               design, and the tools I use for my work. Simply put, I am
               deliberate about giving my clients the best, so I take out time to
               grow my skill. My strategy involves: • Getting acquainted with my
               client. • Understanding their needs, target audience, and
-              competitors. • Creating a logo that meets client's requirements
+              competitors. • Creating a logo that meets client&apos;s requirements
               appeals to their target audience and stands out, remarkably, from
               the crowd. Feel free to contact me. Plus, I enjoy a good
               conversation. God bless!
