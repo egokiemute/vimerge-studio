@@ -42,7 +42,7 @@ export const StickyScroll = ({
 
   return (
     <motion.div
-      className="container h-[30rem] overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10 w-full no-scrollbar"
+      className="container h-[60rem] overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10 w-full no-scrollbar"
       ref={ref}
     >
       <div className="relative grid grid-cols-1 lg:grid-cols-2 md:px-8 w-full">

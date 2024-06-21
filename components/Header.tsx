@@ -17,13 +17,13 @@ const Header = () => {
       <div className="flex flex-row items-center gap-4 relative">
         <Link
           href="/works"
-          className="nav-link-hover relative hidden md:inline-block text-base md:text-lg"
+          className="nav-link-hover relative hidden md:inline-block text-xs sm:text-base md:text-lg"
         >
           WORKS
         </Link>
         <Link
           href="/contact"
-          className="nav-link-hover relative text-base md:text-lg"
+          className="nav-link-hover relative text-xs sm:text-base md:text-lg"
         >
           CONTACT
         </Link>
