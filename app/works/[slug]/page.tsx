@@ -1,4 +1,3 @@
-// export const revalidate = 0;
 
 import { client } from "@/sanity/lib/client";
 import { getDetailPost } from "@/sanity/queries/posts";
@@ -7,6 +6,7 @@ import { PortableText, PortableTextComponents } from "@portabletext/react";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import { getDetailRecent } from "@/sanity/queries/recents";
 
 const builder = ImageUrlBuilder(client);
 
@@ -79,13 +79,14 @@ const componentsTest: PortableTextComponents = {
   },
 };
 
-const WorkDetail = async ({ params }: { params: { slug: string } }) => {
+const WorkDetail = async ({ params }: { params: { slug: string, recent: boolean } }) => {
   const { slug } = params;
-  console.log(slug);
 
-  const work = await getDetailPost(slug);
-  console.log(work);
-  console.log(work.title);
+  console.log(slug)
+
+  const work = await getDetailRecent(slug) || await getDetailPost(slug);
+  // console.log(work);
+  // console.log(work.title);
 
   return (
     <main className="container mx-auto px-4 md:px-28 py-16">
@@ -138,10 +139,10 @@ const WorkDetail = async ({ params }: { params: { slug: string } }) => {
             <p className="text-muted-foreground text-2xl">Client/Brand</p>
             <p className="text-lg">{work?.author}</p>
           </div>
-          {work.website && (
+          {work?.website && (
             <div className="flex flex-col items-start flex-wrap gap-3 pt-12 mb-4">
               <p className="text-muted-foreground text-2xl">Website</p>
-              <p className="text-lg">{work?.website}</p>
+              <p className="text-lg">{work?.website || ''}</p>
             </div>
           )}
         </div>

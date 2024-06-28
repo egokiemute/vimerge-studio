@@ -1,12 +1,13 @@
 import WorkHero from "@/components/WorkHero";
 import Works from "@/components/Works";
 import { Post, getPosts } from "@/sanity/queries/posts";
+import { Recent, getRecents } from "@/sanity/queries/recents";
 import Link from "next/link";
 import React from "react";
 
 const Page = async () => {
   const worksData: Post[] = await getPosts();
-  console.log(worksData);
+  
   return (
     <main className="">
       <WorkHero />

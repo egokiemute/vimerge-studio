@@ -5,7 +5,7 @@ export type category = {
   title: string;
 };
 
-export type Post = {
+export type Recent = {
   title?: string;
   description?: string;
   slug?: {
@@ -21,9 +21,10 @@ export type Post = {
   categories?: category[];
   span: boolean;
   website: string;
+  recent: boolean;
 };
 
-const getPostsQuery = groq`*[_type == "post"]{
+const getRecentsQuery = groq`*[_type == "recent"]{
   title,
   description,
   slug,
@@ -38,11 +39,11 @@ const getPostsQuery = groq`*[_type == "post"]{
   website
 }`;
 
-export async function getPosts() {
-  return await client.fetch(getPostsQuery, {});
+export async function getRecents() {
+  return await client.fetch(getRecentsQuery, {});
 }
 
-const getPostDetailQuery = groq`*[_type == "post"][slug.current == $slug][0]{
+const getRecentDetailQuery = groq`*[_type == "recent"][slug.current == $slug][0]{
   title,
   description,
   slug,
@@ -57,8 +58,8 @@ const getPostDetailQuery = groq`*[_type == "post"][slug.current == $slug][0]{
   website
 }`;
 
-export async function getDetailPost(slug: string) {
-  return await client.fetch(getPostDetailQuery, {
+export async function getDetailRecent(slug: string) {
+  return await client.fetch(getRecentDetailQuery, {
     slug,
     revalidate: new Date().getHours(),
   });

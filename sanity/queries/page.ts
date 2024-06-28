@@ -11,6 +11,7 @@ export type ContentType = {
   };
 };
 
+
 export type ProjectType = {
   type: string;
   excerpt: string;
@@ -20,47 +21,31 @@ export type ProjectType = {
   url: string;
   imageUrls: ImageType[];
 };
+
 export type ImageType = {
   url: string;
 };
+
 export async function getHomepage() {
   const getPageQuery = groq`*[_type == "page"][slug == 'home'][0]{
     'Heading':title,
     slug,
     'Hero':pageBuilder[][_type == "hero"][0]{
       'heroImage':image.asset->url,
-      heading,
-      tagline
+      titleOne,
+      titleTwo,
+      body,
+      btnText,
+      gallery[]{
+        _type,
+        asset->{
+          url
+        },
+        alt
+      },
+      mediaType
     },
-      'Content':pageBuilder[][_type == "textWithIllustration"][0]{
-      "type": _type,
-      excerpt,
-      tagline,
-      heading,
-      image
-    
-    },
-      'SectionImageOverlay':pageBuilder[][_type == "sectionImageOverlay"][0]{
-      "type": _type,
-      heading,
-      'imageOverlay':image.asset->url,
-  
-    },
-        'Expertises':pageBuilder[][_type == "expertises"]{
-      "type": _type,
-      excerpt,
-      heading,
-      'url':image.asset->url
-    },
-    
-      'Gallery':pageBuilder[][_type == "gallery"][0]{
-      _type,
-      'imageUrls':images[].asset->{
-        'url':url
-      }
-    },
-  
-}`;
+  }`;
 
   return await client.fetch(getPageQuery, {
     revalidate: new Date().getSeconds(),
@@ -69,14 +54,12 @@ export async function getHomepage() {
 
 export async function getServicesPage(slug: string) {
   const getPageQuery = groq`*[_type == "page" && slug.current == ${slug}][0]{
-    
     'Heading':title,
     'Content':pageBuilder[][_type == "textWithIllustration"]{
       "type": _type,
       excerpt,
       heading,
       image
-    
     },
     'Gallery':pageBuilder[][_type == "gallery"][0]{
       _type,
@@ -84,24 +67,23 @@ export async function getServicesPage(slug: string) {
         'url':url
       }
     },
-
-      'CallToAction':pageBuilder[][_type == "callToAction"][0]{
+    'CallToAction':pageBuilder[][_type == "callToAction"][0]{
       _type == "callToAction" => @-> {
       _type,
       title,
       link
     }
-        },
+    },
     'Video':pageBuilder[][_type == "video"][0]{
      videoLabel,
      url
     },
-      'FormContact':pageBuilder[][_type == "form"][0]{
+    'FormContact':pageBuilder[][_type == "form"][0]{
      label,
      heading,
      form
     },
-}`;
+  }`;
 
   return await client.fetch(getPageQuery, {
     revalidate: new Date().getSeconds(),
@@ -114,10 +96,19 @@ export async function getWorksPage() {
     slug,
     'Hero':pageBuilder[][_type == "hero"][0]{
       'heroImage':image.asset->url,
-      heading,
-      tagline
+      titleOne,
+      titleTwo,
+      body,
+      btnText,
+      gallery[]{
+        _type,
+        asset->{
+          url
+        },
+        alt
+      },
+      mediaType
     },
-    
     'Content':pageBuilder[][_type == "project"]{
       "type": _type,
       excerpt,
@@ -129,9 +120,7 @@ export async function getWorksPage() {
         'url':url
       }
     },
-    
-
-          'CallToAction':pageBuilder[][_type == "callToAction"][0]{
+    'CallToAction':pageBuilder[][_type == "callToAction"][0]{
       _type == "callToAction" => @-> {
       _type,
       title,
@@ -139,7 +128,6 @@ export async function getWorksPage() {
       link
     }
   }
-  
 }`;
 
   return await client.fetch(getPageQuery, {
@@ -151,8 +139,7 @@ export async function getGalleryPage() {
   const getPageQuery = groq`*[_type == "page"][slug == 'gallery'][0]{
     'Heading':title,
     slug,
-    
-     'Gallery':pageBuilder[][_type == "gallery"][0]{
+    'Gallery':pageBuilder[][_type == "gallery"][0]{
       _type,
       'imageUrls':images[].asset->{
         'url':url
