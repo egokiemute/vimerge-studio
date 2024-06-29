@@ -1,8 +1,10 @@
 "use client";
 import AboutHero from "@/components/AboutHero";
-import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
+// import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect } from "react";
+import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const content = [
   {
@@ -60,69 +62,120 @@ const page = () => {
   return (
     <main className="relative flex justify-center items-center flex-col overflow-hidden mx-auto">
       <AboutHero />
-      <section className="py-16 mb-20 bg-background">
+      <section className="py-16 mb-20 bg-black">
         <div className="container mx-auto px-4 flex flex-col items-center">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white rounded-lg shadow-lg">
-              <img
+          <div className="grid md:grid-cols-3 gap-4">
+            <div className="col-span-1 relative h-[600px] rounded-xl overflow-hidden">
+              <Image
                 src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80"
-                alt="Founder"
-                className="w-full h-96 object-cover mb-4 rounded"
+                alt="Member"
+                width={320}
+                height={450}
+                className="w-full h-full object-cover"
               />
-              <div className=" p-6">
-                <h3 className="text-2xl font-bold mb-2 text-foreground">
-                  Emilson Kurtosie
-                </h3>
-                <p className="mb-4">CEO / Design Lead</p>
-                <p className="text-muted-foreground mb-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-                  non recusandae deserunt laudantium possimus soluta nobis!
-                </p>
+              <div className="absolute group bottom-2 overflow-hidden px-4 bg-[#005FEA] backdrop-blur-2xl w-full">
+                <div className="bg-primary-300 flex-col group-hover:h-[240px] min-h-10 h-0 duration-300 px-6 py-2  flex justify-between rounded-xl">
+                  <div className="flex justify-between items-center">
+                    <h4 className="text-label font-semibold leading-none">
+                      Emilson Kurtosie
+                    </h4>
+                    <span>CEO/Founder</span>
+                    <Link href="/">
+                      <FaLinkedin size={30} />
+                    </Link>
+                  </div>
+                  <ul className="h-0 translate-y-3 my-4 group-hover:translate-y-0 group-hover:h-full duration-300 pb-2">
+                    <li className="text-sub-title">ABOUT THE FOUNDER</li>
+                    <li className="text-sm md:text-base pb-3">
+                      Kunoritse Emilsson, the lead designer and founder of
+                      Vimerge Studios from Delta State, Nigeria, has a passion
+                      for God and design, specializing in brand identity and
+                      T-shirt design. With over six years of experience, he
+                      founded Vimerge Studios to help Christians and creatives
+                      visually express their visions. As a Fiverr Level 2
+                      seller, Emilsson has earned outstanding reviews for his
+                      work, which focuses on crafting powerful and resonant
+                      narratives.
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div className="bg-white rounded-lg shadow-lg">
-              <img
-                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
-                alt="Founder"
-                className="w-full h-96 object-cover mb-4 rounded"
+            <div className="col-span-1 relative h-[600px] rounded-xl overflow-hidden">
+              <Image
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80"
+                alt="Member"
+                width={320}
+                height={450}
+                className="w-full h-full object-cover"
               />
-              <div className=" p-6">
-                <h3 className="text-2xl font-bold mb-2 text-foreground">
-                  Matthew Okiemute
-                </h3>
-                <p className="mb-4">Developer Lead</p>
-                <p className="text-muted-foreground mb-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-                  non recusandae deserunt laudantium possimus soluta nobis!
-                </p>
+              <div className="absolute group bottom-2 overflow-hidden px-4 bg-[#005FEA] backdrop-blur-2xl w-full">
+                <div className="bg-primary-300 flex-col group-hover:h-[240px] min-h-10 h-0 duration-300 px-6 py-2  flex justify-between rounded-xl">
+                  <div className="flex justify-between items-center">
+                    <h4 className="text-label font-semibold leading-none">
+                      Emilson Kurtosie
+                    </h4>
+                    <span>CEO/Founder</span>
+                    <Link href="/">
+                      <FaLinkedin size={30} />
+                    </Link>
+                  </div>
+                  <ul className="h-0 translate-y-3 my-4 group-hover:translate-y-0 group-hover:h-full duration-300 pb-2">
+                    <li className="text-sub-title">ABOUT THE FOUNDER</li>
+                    <li className="text-sm md:text-base pb-3">
+                      Kunoritse Emilsson, the lead designer and founder of
+                      Vimerge Studios from Delta State, Nigeria, has a passion
+                      for God and design, specializing in brand identity and
+                      T-shirt design. With over six years of experience, he
+                      founded Vimerge Studios to help Christians and creatives
+                      visually express their visions. As a Fiverr Level 2
+                      seller, Emilsson has earned outstanding reviews for his
+                      work, which focuses on crafting powerful and resonant
+                      narratives.
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div className="bg-white rounded-lg shadow-lg">
-              <img
+            <div className="col-span-1 relative h-[600px] rounded-xl overflow-hidden">
+              <Image
                 src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80"
-                alt="Founder"
-                className="w-full h-96 object-cover mb-4 rounded"
+                alt="Member"
+                width={320}
+                height={450}
+                className="w-full h-full object-cover"
               />
-              <div className=" p-6">
-                <h3 className="text-2xl font-bold mb-2 text-foreground">
-                  Emilson Kurtosie
-                </h3>
-                <p className="mb-4">CEO / Design Lead</p>
-                <p className="text-muted-foreground mb-4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-                  non recusandae deserunt laudantium possimus soluta nobis!
-                </p>
+              <div className="absolute group bottom-2 overflow-hidden px-4 bg-[#005FEA] backdrop-blur-2xl w-full">
+                <div className="bg-primary-300 flex-col group-hover:h-[240px] min-h-10 h-0 duration-300 px-6 py-2  flex justify-between rounded-xl">
+                  <div className="flex justify-between items-center">
+                    <h4 className="text-label font-semibold leading-none">
+                      Emilson Kurtosie
+                    </h4>
+                    <span>CEO/Founder</span>
+                    <Link href="/">
+                      <FaLinkedin size={30} />
+                    </Link>
+                  </div>
+                  <ul className="h-0 translate-y-3 my-4 group-hover:translate-y-0 group-hover:h-full duration-300 pb-2">
+                    <li className="text-sub-title">ABOUT THE FOUNDER</li>
+                    <li className="text-sm md:text-base pb-3">
+                      Kunoritse Emilsson, the lead designer and founder of
+                      Vimerge Studios from Delta State, Nigeria, has a passion
+                      for God and design, specializing in brand identity and
+                      T-shirt design. With over six years of experience, he
+                      founded Vimerge Studios to help Christians and creatives
+                      visually express their visions. As a Fiverr Level 2
+                      seller, Emilsson has earned outstanding reviews for his
+                      work, which focuses on crafting powerful and resonant
+                      narratives.
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <div className="container px-10 max-w-7xl pb-32">
-        <h3 className="font-normal text-3xl md:text-4xl text-neutral-900 max-w-7xl text-center pb-6">
-          Our Values
-        </h3>
-        <StickyScroll content={content} />
-      </div>
     </main>
   );
 };

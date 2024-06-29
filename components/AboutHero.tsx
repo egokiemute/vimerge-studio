@@ -36,14 +36,16 @@ const AboutHero = () => {
             className="w-full h-auto"
             alt="Vimerge banner"
           /> */}
+          <div className="w-80 h-80">
           <img
             src="/box-2.png"
-            className="w-full h-auto"
+            className="w-full h-full object-cover"
             alt="Vimerge banner"
           />
+          </div>
         </div>
       </div>
-      <div className="flex flex-row items-center justify-between gap-10 py-40 px-10">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-10 py-40 px-10">
         <div className="text-center -mt-10">
           <h3 className="text-2xl font-semibold mb-4">Vision</h3>
           <p className="text-4xl">
@@ -60,25 +62,31 @@ const AboutHero = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center gap-4 py-20">
-        <h3>The 3 C's of Vimerge</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 items-center justify-between gap-4">
-          <div className="flex flex-col gap-2 items-center">
-            <p className="text-3xl font-medium">Clarity</p>
-            <div className="bg-[#005FEA] text-white font-bold text-xl px-6 py-3 rounded-3xl">
+      <div className="flex flex-col items-center justify-center gap-4 py-20 w-full">
+        <h3 className="text-2xl font-semibold mb-4">The 3 C's of Vimerge</h3>
+        <div className="flex flex-col gap-3 w-full max-w-5xl">
+          <div className="bg-[#005FEA] flex flex-col items-start md:flex-row gap-2 md:items-center justify-between p-4 rounded-3xl">
+            <div>
+              <p className="text-3xl font-medium">Clarity</p>
+            </div>
+            <div className=" text-white font-bold text-xl px-6 py-3">
               Write the Vision
             </div>
           </div>
-          <div className="flex flex-col gap-2 items-center">
-            <p className="text-3xl font-medium">Creativity</p>
-            <div className="bg-[#fff] border-[#005FEA] border-[0.5px] border-solid shadow-sm text-[#005FEA] font-bold text-xl px-6 py-3 rounded-3xl">
-            Designing through God's Lens
+          <div className="bg-[#005FEA] flex flex-col items-start md:flex-row gap-2 md:items-center justify-between p-4 rounded-3xl">
+            <div>
+              <p className="text-3xl font-medium">Clarity</p>
+            </div>
+            <div className=" text-white font-bold text-xl px-6 py-3">
+              Write the Vision
             </div>
           </div>
-          <div className="flex flex-col gap-2 items-center">
-            <p className="text-3xl font-medium">Conviction</p>
-            <div className="bg-[#005FEA] text-white font-bold text-xl px-6 py-3 rounded-3xl">
-            Faith-centric...
+          <div className="bg-[#005FEA] flex flex-col items-start md:flex-row gap-2 md:items-center justify-between p-4 rounded-3xl">
+            <div>
+              <p className="text-3xl font-medium">Clarity</p>
+            </div>
+            <div className=" text-white font-bold text-xl px-6 py-3">
+              Write the Vision
             </div>
           </div>
         </div>
