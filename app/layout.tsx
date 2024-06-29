@@ -15,19 +15,21 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-  metaTitle = 'Vimerge Studio - A design studio for creative christian organizations.',
-  metaDescription = 'A design studio for creative christian organizations.',
-  metaImage = '/banner.png',  // Replace with a default image path
-  metaUrl = 'https://vimerge.studio',  // Replace with your website's URL
-}: Readonly<{
+type RootLayoutProps = {
   children: React.ReactNode;
   metaTitle?: string;
   metaDescription?: string;
   metaImage?: string;
   metaUrl?: string;
-}>) {
+};
+
+export default function RootLayout({
+  children,
+  metaTitle = "Vimerge Studio - A design studio for creative christian organizations.",
+  metaDescription = "A design studio for creative christian organizations.",
+  metaImage = "/banner.png",
+  metaUrl = "https://vimerge.studio",
+}: RootLayoutProps) {
   return (
     <html lang="en">
       <Meta title={metaTitle} description={metaDescription} image={metaImage} url={metaUrl} />
