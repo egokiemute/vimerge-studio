@@ -12,7 +12,7 @@ const AboutHero = () => {
           <b> visions</b> and <b>emerge</b>, reflects our commitment to
           transforming your ideas into impactful realities. Inspired by the
           prophetic words of Habakkuk 2:2:{" "}
-          <b>"Write the vision and make it plain,"</b> we are not just a design
+          <b>&quot;Write the vision and make it plain,&quot;</b> we are not just a design
           studio we are storytellers.
         </p>
         <p className="font-normal text-xl md:text-3xl text-neutral-700 max-w-5xl text-start">
@@ -63,7 +63,7 @@ const AboutHero = () => {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center gap-4 py-20 w-full">
-        <h3 className="text-2xl font-semibold mb-4">The 3 C's of Vimerge</h3>
+        <h3 className="text-2xl font-semibold mb-4">The 3 C&apos;s of Vimerge</h3>
         <div className="flex flex-col gap-3 w-full max-w-5xl">
           <div className="bg-[#005FEA] flex flex-col items-start md:flex-row gap-2 md:items-center justify-between p-4 rounded-3xl">
             <div>
