@@ -62,115 +62,85 @@ const page = () => {
   return (
     <main className="relative flex justify-center items-center flex-col overflow-hidden mx-auto">
       <AboutHero />
-      <section className="py-16 mb-20 bg-black">
-        <div className="container mx-auto px-4 flex flex-col items-center">
-          <div className="grid md:grid-cols-3 gap-4">
-            <div className="col-span-1 relative h-[600px] rounded-xl overflow-hidden">
-              <Image
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80"
-                alt="Member"
-                width={320}
-                height={450}
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute group bottom-2 overflow-hidden px-4 bg-[#005FEA] backdrop-blur-2xl w-full">
-                <div className="bg-primary-300 flex-col group-hover:h-[240px] min-h-10 h-0 duration-300 px-6 py-2  flex justify-between rounded-xl">
-                  <div className="flex justify-between items-center">
-                    <h4 className="text-label font-semibold leading-none">
-                      Emilson Kurtosie
-                    </h4>
-                    <span>CEO/Founder</span>
-                    <Link href="/">
-                      <FaLinkedin size={30} />
-                    </Link>
-                  </div>
-                  <ul className="h-0 translate-y-3 my-4 group-hover:translate-y-0 group-hover:h-full duration-300 pb-2">
-                    <li className="text-sub-title">ABOUT THE FOUNDER</li>
-                    <li className="text-sm md:text-base pb-3">
-                      Kunoritse Emilsson, the lead designer and founder of
-                      Vimerge Studios from Delta State, Nigeria, has a passion
-                      for God and design, specializing in brand identity and
-                      T-shirt design. With over six years of experience, he
-                      founded Vimerge Studios to help Christians and creatives
-                      visually express their visions. As a Fiverr Level 2
-                      seller, Emilsson has earned outstanding reviews for his
-                      work, which focuses on crafting powerful and resonant
-                      narratives.
-                    </li>
-                  </ul>
-                </div>
+      <section className="py-16 mb-20 bg-black w-[100vw]">
+        <div className="container mx-auto px-4 sm:px-10 py-28 flex flex-col items-center">
+          <div className="text-center max-w-5xl pb-20 text-white px-3 mx-auto">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-medium mb-4">Our Team</h3>
+            <p className="text-4xl md:text-6xl font-medium">
+              Our journey is dedicated to helping Christians and Christian
+              creatives give their visions a visual voice.
+            </p>
+          </div>
+          <div className="flex flex-col items-center justify-center mx-auto">
+            <div className="mt-12 rounded-full flex flex-col items-center justify-center max-w-6xl px-4">
+              <div className="mb-4 flex flex-col items-center justify-center">
+                <img
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80"
+                  alt="Member"
+                  className="object-cover w-96 h-96 rounded-full"
+                />
+                <h3 className="text-3xl font-normal my-2 text-white">
+                  Kunoritse Emilsson
+                </h3>
+                <h3 className="text-4xl font-medium text-white mb-6">Founder/Lead Designer</h3>
+              </div>
+              <p className="text-2xl sm:text-3xl md:text-4xl text-white text-center">
+                Kunoritse Emilsson is the lead designer and founder of Vimerge
+                Studios. Hailing from Delta State, Nigeria, Emilsson has always
+                had a passion for both God and design, specializing in brand
+                identity and strategy. He views design through the lens of God
+                as the ultimate creator and author of creativity.
+              </p>
+              <p className="text-2xl sm:text-3xl md:text-4xl text-white text-center mt-8">
+                With over six years of experience in design, Emilsson&apos;s
+                expertise and dedication have earned him a reputation for
+                excellence. As a freelance designer and Fiverr Level 2 seller,
+                he has received outstanding reviews from fellow Christians who
+                trust him to bring their God-given visions to life through
+                design. Emilsson&apos;s work is not just about creating visuals
+                but about crafting narratives that resonate deeply and
+                communicate powerfully.
+              </p>
+            </div>
+          </div>
+          <div className="grid md:grid-cols-3 gap-16 justify-between mt-40 max-w-7xl">
+            <div className="col-span-1">
+              <div className="mb-4 flex flex-col items-center justify-center text-center">
+                <img
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80"
+                  alt="Member"
+                  className="object-cover w-80 h-80 sm:w-72 sm:h-72 rounded-full"
+                />
+                <h3 className="text-2xl font-normal my-4 text-white">
+                  Senior Designer
+                </h3>
+                <h3 className="text-4xl font-medium text-white">Disi Festus</h3>
               </div>
             </div>
-            <div className="col-span-1 relative h-[600px] rounded-xl overflow-hidden">
-              <Image
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80"
-                alt="Member"
-                width={320}
-                height={450}
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute group bottom-2 overflow-hidden px-4 bg-[#005FEA] backdrop-blur-2xl w-full">
-                <div className="bg-primary-300 flex-col group-hover:h-[240px] min-h-10 h-0 duration-300 px-6 py-2  flex justify-between rounded-xl">
-                  <div className="flex justify-between items-center">
-                    <h4 className="text-label font-semibold leading-none">
-                      Emilson Kurtosie
-                    </h4>
-                    <span>CEO/Founder</span>
-                    <Link href="/">
-                      <FaLinkedin size={30} />
-                    </Link>
-                  </div>
-                  <ul className="h-0 translate-y-3 my-4 group-hover:translate-y-0 group-hover:h-full duration-300 pb-2">
-                    <li className="text-sub-title">ABOUT THE FOUNDER</li>
-                    <li className="text-sm md:text-base pb-3">
-                      Kunoritse Emilsson, the lead designer and founder of
-                      Vimerge Studios from Delta State, Nigeria, has a passion
-                      for God and design, specializing in brand identity and
-                      T-shirt design. With over six years of experience, he
-                      founded Vimerge Studios to help Christians and creatives
-                      visually express their visions. As a Fiverr Level 2
-                      seller, Emilsson has earned outstanding reviews for his
-                      work, which focuses on crafting powerful and resonant
-                      narratives.
-                    </li>
-                  </ul>
-                </div>
+            <div className="col-span-1">
+              <div className="mb-4 flex flex-col items-center justify-center text-center">
+                <img
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80"
+                  alt="Member"
+                  className="object-cover w-80 h-80 sm:w-72 sm:h-72 rounded-full"
+                />
+                 <h3 className="text-2xl font-normal my-4 text-white">
+                  Senior Designer
+                </h3>
+                <h3 className="text-4xl font-medium text-white">Disi Festus</h3>
               </div>
             </div>
-            <div className="col-span-1 relative h-[600px] rounded-xl overflow-hidden">
-              <Image
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80"
-                alt="Member"
-                width={320}
-                height={450}
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute group bottom-2 overflow-hidden px-4 bg-[#005FEA] backdrop-blur-2xl w-full">
-                <div className="bg-primary-300 flex-col group-hover:h-[240px] min-h-10 h-0 duration-300 px-6 py-2  flex justify-between rounded-xl">
-                  <div className="flex justify-between items-center">
-                    <h4 className="text-label font-semibold leading-none">
-                      Emilson Kurtosie
-                    </h4>
-                    <span>CEO/Founder</span>
-                    <Link href="/">
-                      <FaLinkedin size={30} />
-                    </Link>
-                  </div>
-                  <ul className="h-0 translate-y-3 my-4 group-hover:translate-y-0 group-hover:h-full duration-300 pb-2">
-                    <li className="text-sub-title">ABOUT THE FOUNDER</li>
-                    <li className="text-sm md:text-base pb-3">
-                      Kunoritse Emilsson, the lead designer and founder of
-                      Vimerge Studios from Delta State, Nigeria, has a passion
-                      for God and design, specializing in brand identity and
-                      T-shirt design. With over six years of experience, he
-                      founded Vimerge Studios to help Christians and creatives
-                      visually express their visions. As a Fiverr Level 2
-                      seller, Emilsson has earned outstanding reviews for his
-                      work, which focuses on crafting powerful and resonant
-                      narratives.
-                    </li>
-                  </ul>
-                </div>
+            <div className="col-span-1">
+              <div className="mb-4 flex flex-col items-center justify-center text-center">
+                <img
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80"
+                  alt="Member"
+                  className="object-cover w-80 h-80 sm:w-72 sm:h-72 rounded-full"
+                />
+                 <h3 className="text-2xl font-normal my-4 text-white">
+                  Senior Designer
+                </h3>
+                <h3 className="text-4xl font-medium text-white">Disi Festus</h3>
               </div>
             </div>
           </div>

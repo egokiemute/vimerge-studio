@@ -12,21 +12,21 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
-  openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://vimerge.studio',
-    title: 'Vimerge Studio - Home',
-    description: 'Welcome to Vimerge Studio, a design studio for creative christian organizations.',
-    images: [
-      {
-        url: '/banner.png',
-        width: 800,
-        height: 600,
-        alt: 'Vimerge Studio Banner',
-      },
-    ],
-  },
+  // openGraph: {
+  //   type: 'website',
+  //   locale: 'en_US',
+  //   url: 'https://vimerge.studio',
+  //   title: 'Vimerge Studio - Home',
+  //   description: 'Welcome to Vimerge Studio, a design studio for creative christian organizations.',
+  //   images: [
+  //     {
+  //       url: '/banner.png',
+  //       width: 800,
+  //       height: 600,
+  //       alt: 'Vimerge Studio Banner',
+  //     },
+  //   ],
+  // },
 };
 
 export default function RootLayout({

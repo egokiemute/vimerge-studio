@@ -15,14 +15,14 @@ const Header = () => {
       <div className="flex flex-row items-center gap-4 relative">
         <Link
           href="/works"
-          className="nav-link-hover relative text-[12px] sm:text-[14] md:text-base font-medium"
+          className="nav-link-hover relative text-base font-medium"
         >
           WORKS
         </Link>
         <div className="hidden sm:inline-block">
         <Link
           href="/contact"
-          className="hidden md:inline-block nav-link-hover relative text-[12px] sm:text-[14] md:text-base font-medium"
+          className="hidden md:inline-block nav-link-hover relative text-base font-medium"
         >
           CONTACT
         </Link>
