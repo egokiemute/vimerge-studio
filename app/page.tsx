@@ -4,23 +4,23 @@ import Hero from "@/components/Hero";
 import ProjectCarousel from "@/components/ProjectCarousel";
 import Testimonial from "@/components/Testimonial";
 import { FloatingNav } from "@/components/ui/FloatingNavBar";
-import { Recent, getRecents } from "@/sanity/queries/recents";
+// import { Recent, getRecents } from "@/sanity/queries/recents";
 import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
-  const [recentData, setRecentData] = useState<Recent[]>([]);
+  // const [recentData, setRecentData] = useState<Recent[]>([]);
 
-  useEffect(() => {
-    const fetchRecentWorks = async() => {
-      const recent = await getRecents();
-      setRecentData(recent);
-    };
-    fetchRecentWorks();
-  }, []);
-  console.log(recentData);
+  // useEffect(() => {
+  //   const fetchRecentWorks = async() => {
+  //     const recent = await getRecents();
+  //     setRecentData(recent);
+  //   };
+  //   fetchRecentWorks();
+  // }, []);
+  // console.log(recentData);
 
   if (!loading) {
     return (
@@ -79,7 +79,7 @@ export default function Home() {
         <ProjectCarousel />
       </div>
       {/* <PreviousWorks /> */}
-      <section className="py-10 mb-20">
+{/*       <section className="py-10 mb-20">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-6">Recent Works</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -131,9 +131,9 @@ export default function Home() {
           </Link>
         </div>
       </div>
-    </section>
+    </section> */}
 
-      <Testimonial />
+{/*       <Testimonial /> */}
     </>
   );
 }
